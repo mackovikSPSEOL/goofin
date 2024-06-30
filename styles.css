@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     
-    
 }
 
 body{
@@ -83,11 +82,11 @@ h1 span:nth-child(7) { animation-delay: 0.7s; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     position: relative;
     z-index: 4;
+    background-color: #ffffff00;
 }
 
 
@@ -101,6 +100,10 @@ h1 span:nth-child(7) { animation-delay: 0.7s; }
     opacity: 0;
 }
 
+#about_title{
+    font-size: 5vh;
+    padding: 10px;
+}
 
 #about{
     display: flex;
@@ -108,27 +111,72 @@ h1 span:nth-child(7) { animation-delay: 0.7s; }
     flex-direction: column;
     background-color: #ffffff;
     height: 150vh;
-    width: 100%;
+    
     padding: 10vw;
-    margin-top: -20vw;
+    margin-top: -60vh;
     transition: 0.3s;
     position:relative;
     z-index: 5;
     
+}
+
+#description_title{
+    font-size: 4.8vh;
+    padding: 10px;
 }
 #description{
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #ffffff;
-    height: 60vh;
-    width: 100%;
+    height: 150vh;
     padding: 10vw;
-    margin-top: -20vw;
+    margin-top: -10vw;
     transition: 0.3s;
     position:relative;
     z-index: 5;
 }
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 20vh;
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+    z-index: 5;
+}
+
+#button{
+    text-align: center;
+    font-size: 3vw;
+    width: 30vw;
+    height: 8vh;
+    background-color: #761b1b;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#behind-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: -14vh;
+    font-size: 5vh;
+    transition: 0.3s;
+    position: relative;
+    opacity: 0;
+
+}
+
 
 #navigation_arrow {
     display: flex;
@@ -140,16 +188,17 @@ h1 span:nth-child(7) { animation-delay: 0.7s; }
     bottom: 0;
     flex-direction: row;
     justify-content: center;
+    background-color: #00000000;
+    animation: MoveIn 2s infinite alternate ease-in-out; 
 }
 
 #arrow_img{
-
     bottom: 0;  
     height: 48px;
     width: 48px;
-
-    animation: MoveIn 2s infinite alternate ease-in-out; 
+    
 }
+
 @keyframes MoveIn {
     0% {
         transform: translateY(-50%);
